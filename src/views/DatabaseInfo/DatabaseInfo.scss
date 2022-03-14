@@ -1,0 +1,76 @@
+.database-info-base-div {
+  width: 99%;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  margin-left: 4px;
+}
+
+.database-info-data {
+  border: 1px solid blue;
+}
+.sql-server-logo {
+  width: 100%;
+  height: auto;
+}
+
+.database-page-info-div {
+  display: grid;
+  grid-template-columns: repeat(2, 100fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.database-info-header {
+  background-color: #4472c4;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.database-info-body {
+  background-color: #6eb141;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.database-info-actual-data {
+  box-shadow: 0px 1px 5px 1px black;
+}
+
+.database-info-search-div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  input {
+    height: 50px;
+    margin-left: 30px;
+    width: 220px;
+    margin-right: 30px;
+    border-color: blue;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+}
+
+.database-page-icons {
+  cursor: pointer;
+}
