@@ -1,0 +1,58 @@
+@import '../../../theme/Colors';
+
+.sql-server-dashboard-base-div {
+  width: 99%;
+  height: calc(100% - 110px);
+  margin-left: 4px;
+}
+
+.sql-server-graph-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: 65%;
+  grid-auto-rows: minmax(50px, auto);
+
+  span {
+    border: 1px solid blue;
+  }
+}
+
+.sql-server-info-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  margin-top: 20px;
+
+  span {
+    height: max(100px, calc(100vh - 90vh));
+    width: 100%;
+  }
+}
+
+.sql-server-dashboard-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 100%;
+  grid-auto-rows: minmax(50px, auto);
+
+  div {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .sql-sub-grid-background-color-green {
+    background-color: $data-info-div-green;
+  }
+
+  .sql-sub-grid-background-color-red {
+    background-color: $data-info-div-red;
+  }
+}

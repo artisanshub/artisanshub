@@ -1,0 +1,27 @@
+.subheader-component-search-div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  input {
+    height: 50px;
+    margin-left: 30px;
+    width: 220px;
+    margin-right: 30px;
+    border-color: blue;
+  }
+
+  input:focus {
+    border-color: blue;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+}
+
+.subheader-component-icons {
+  cursor: pointer;
+}

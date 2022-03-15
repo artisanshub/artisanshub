@@ -1,31 +1,13 @@
 import React from 'react';
 import LineGraphs from '../../components/shared/LineGraph/LineGraphs';
-import './DatabaseInfo.scss';
+import './SQLServerDashboard.scss';
 import sqlServerLogo from '../../assets/sqlServer.png';
+import Subheader from '../../components/shared/Subheader/Subheader';
 
-import AutorenewIcon from '@mui/icons-material/Autorenew';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-
-const DatabaseInfo = () => {
+const SQLServerDashboard = () => {
   return (
     <>
-      <div className="database-info-search-div">
-        <p>Select APP : </p>
-        <span>
-          <input />
-        </span>
-        <p>Select Host : </p>
-        <span>
-          <input />
-        </span>
-        <AutorenewIcon
-          className="database-page-icons"
-          style={{
-            marginRight: '20px'
-          }}
-        />
-        <AccessTimeIcon className="database-page-icons" />
-      </div>
+      <Subheader />
       <div className="database-info-base-div">
         <div className="database-info-data database-page-info-div" style={{ border: 'none' }}>
           <span className="database-info-logo">
@@ -83,4 +65,4 @@ const DatabaseInfo = () => {
   );
 };
 
-export default DatabaseInfo;
+export default SQLServerDashboard;

@@ -2,23 +2,24 @@
 import React from 'react';
 import './LineGraphs.scss';
 import {
-  XYPlot,
   XAxis,
   YAxis,
   VerticalGridLines,
   LineSeries,
   HorizontalGridLines,
-  makeVisFlexible
+  FlexibleXYPlot
+  // DiscreteColorLegend
 } from 'react-vis';
 
 const LineGraphs = () => {
   const ITEMS = ['Item 1', 'Item 2', 'Item 3'];
-  const FlexibleXYPlot = makeVisFlexible(XYPlot);
 
   return (
-    <FlexibleXYPlot height={220} className="xy-plot-base-div">
+    <FlexibleXYPlot className="xy-plot-base-div">
       <VerticalGridLines />
       <HorizontalGridLines />
+      {/* <DiscreteColorLegend items={['ItemOne', 'ItemTwo', 'ItemThree']} /> */}
+
       <XAxis title="X  Data" />
       <YAxis title="Y  Data" />
       <LineSeries

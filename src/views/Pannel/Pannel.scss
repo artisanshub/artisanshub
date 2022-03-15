@@ -2,7 +2,8 @@
   width: 100%;
   height: calc(100vh - 102px);
   display: flex;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .pannel-search-div {

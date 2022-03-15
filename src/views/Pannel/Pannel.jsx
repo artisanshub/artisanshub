@@ -14,34 +14,56 @@ const Pannel = () => {
             <input className="pannel-search-box" />{' '}
             <SearchIcon className="search-icon" style={{ fontSize: 50 }} />
           </div>
-          <NavLink className="menu-options-base blue-background " to="/pannel/database">
+          <NavLink className="menu-options-base blue-background " to="/pannel/sql-server-dashboard">
             Operation Center
           </NavLink>
-          <NavLink className="menu-options-base light-blue-background" to="/pannel/database">
+          <NavLink
+            className="menu-options-base light-blue-background"
+            to="/pannel/sql-server-dashboard">
             Executive Summary
           </NavLink>
-          <NavLink className="menu-options-base light-blue-background " to="/pannel/database">
+          <NavLink
+            className="menu-options-base light-blue-background "
+            to="/pannel/sql-server-dashboard">
             Operations View
           </NavLink>
-          <NavLink className="menu-options-base blue-background " to="/pannel/database">
+          <NavLink className="menu-options-base blue-background " to="/pannel/sql-server-dashboard">
             Incident Manager
           </NavLink>
-          <NavLink className="menu-options-base light-blue-background " to="/pannel/database">
+          <NavLink
+            className="menu-options-base light-blue-background "
+            to="/pannel/sql-server-dashboard">
             Lastes Alerts
           </NavLink>
-          <NavLink className="menu-options-base light-blue-background " to="/pannel/database">
+          <NavLink
+            className="menu-options-base light-blue-background "
+            to="/pannel/sql-server-dashboard">
             Schedule Downtime
           </NavLink>
-          <NavLink className="menu-options-base blue-background" to="/pannel/database">
+          <NavLink className="menu-options-base blue-background" to="/pannel/sql-server-dashboard">
             Details
           </NavLink>
-          <NavLink className="menu-options-base green-background " to="/pannel/database">
-            SQLServer Dashbord
+          <NavLink
+            className="menu-options-base green-background "
+            to="/pannel/sql-server-dashboard">
+            SQLServer Dashboard
           </NavLink>
-          <NavLink className="menu-options-base light-blue-background " to="/pannel/database">
+          <NavLink className="menu-options-base blue-background " to="/pannel/db-2-dashboard">
+            DB2 Dashboard
+          </NavLink>
+
+          <NavLink
+            className="menu-options-base blue-background "
+            to="/pannel/microsoft-iis-dashboard">
+            IIS Dashboard
+          </NavLink>
+          <NavLink
+            className="menu-options-base light-blue-background "
+            to="/pannel/sql-server-dashboard">
             Application Summary
           </NavLink>
         </div>
+
         <div className="right-window-section">
           <Outlet />
         </div>

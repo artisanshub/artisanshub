@@ -1,0 +1,53 @@
+.iis-dashboard-base-div {
+  width: 98%;
+  height: 98%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.iis-dashboard-data-card-div {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  img {
+    height: 100%;
+    margin-right: 30px;
+  }
+}
+
+.iis-dashboard-graph-base-div {
+  height: calc(100% - 250px);
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  margin-left: 4px;
+  padding: 5px;
+  span {
+    border: 1px solid blue;
+  }
+}
+
+.iis-dashboard-graph-base-div-2 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: 300px;
+  margin-left: 4px;
+  padding: 5px;
+  span {
+    border: 1px solid blue;
+  }
+}
+
+.iis-dashboard-base-div-2 {
+  width: 98%;
+  margin-top: 4px;
+  margin-left: 4px;
+  height: 300px;
+}
